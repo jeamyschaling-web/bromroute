@@ -1,7 +1,9 @@
-# BromRoute v0.2
+# BromRoute v0.3 — experimentele eigen router
 
-Experimentele mobiele routeverkenner. De routes komen van een **gewone autorouter** en zijn **niet brommobiel-gevalideerd**. Een optionele OSM-wegtype-screening zoekt slechts naar nabijgelegen motorway/trunk-wegtypen; dit kan foutpositieven en foutnegatieven geven. Niet gebruiken als navigatie tijdens het rijden.
+Een demonstratie die zelf een route zoekt in een beperkte uitsnede van OpenStreetMap, met conservatieve wegtypefilters. De router is **niet geschikt als verkeersnavigatie**. Onvolledige tagging, verkeersborden, turn restrictions, toegangsuitzonderingen en afsluitingen zijn niet betrouwbaar afgedekt. Geen route is geen bewijs dat er geen route bestaat; een getekende route is geen bewijs van wettelijke toegankelijkheid.
 
-Upload alle vier bestanden in de hoofdmap van je bestaande GitHub-repository `bromroute` en overschrijf de oude versies. GitHub Pages publiceert vervolgens automatisch.
+## Installatie op GitHub Pages
+Upload `index.html` en `README.md` naar de hoofdmap van de bestaande repository. De bestaande `manifest.webmanifest` en `sw.js` mogen blijven staan. Als een oudere versie zichtbaar blijft: harde refresh met Ctrl+F5; eventuele oude service-worker-cache kan het resultaat beïnvloeden.
 
-Kaarten © OpenStreetMap-bijdragers; Leaflet, Nominatim, OSRM demo en Overpass worden gebruikt voor experimenten. De openbare diensten zijn niet bedoeld voor productiegebruik.
+## Werking
+Nominatim zoekt plaatsen, Overpass haalt OSM-wegen op, browser-JavaScript bouwt een gerichte graaf en Dijkstra berekent een proefroute. De toepassing weigert grotere afstanden, ontbrekende data en fouten. Er is geen fallback naar autorouting.
