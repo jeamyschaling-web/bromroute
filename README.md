@@ -1,7 +1,7 @@
-# BromRoute v0.5 — nauwkeuriger punten kiezen
+# BromRoute v0.6 — experimentele router
 
-Klik op **Kies vertrek op kaart** en daarna op een exacte locatie. Herhaal voor de bestemming. De route wordt alleen berekend als beide locaties binnen 150 meter van een wegpunt liggen. Oranje stippellijnen zijn niet-gecontroleerde aansluitingen.
+Gebaseerd op v0.5. Nieuw: een zichtbare waarschuwing bij een zeer grote omweg (meer dan 2,5× de hemelsbrede afstand); aanvullende conservatieve uitsluiting van expliciet gemarkeerde tolwegen en emergency_access-wegen.
 
-**Niet gebruiken als rijnavigatie.** Dit is een technische proef, geen juridisch gevalideerde brommobielroute.
+**Niet gebruiken als rijnavigatie.** Routes zijn niet juridisch gevalideerd voor brommobielen. De berekening gebruikt onvolledige OpenStreetMap-gegevens; verkeersborden, lokale uitzonderingen, afslagverboden, afsluitingen en wegtoegang kunnen ontbreken. Ook een kortere route is niet automatisch legaal.
 
-Upload `index.html` en `README.md` naar de hoofdmap van de GitHub-repository en bevestig met **Commit changes**.
+Test via GitHub Pages. Vervang alleen index.html en README.md; laat manifest.webmanifest en sw.js staan.
