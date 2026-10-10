@@ -1,9 +1,9 @@
-# BromRoute v0.3 — experimentele eigen router
+# BromRoute v0.4 — verbeterde proefrouteberekening
 
-Een demonstratie die zelf een route zoekt in een beperkte uitsnede van OpenStreetMap, met conservatieve wegtypefilters. De router is **niet geschikt als verkeersnavigatie**. Onvolledige tagging, verkeersborden, turn restrictions, toegangsuitzonderingen en afsluitingen zijn niet betrouwbaar afgedekt. Geen route is geen bewijs dat er geen route bestaat; een getekende route is geen bewijs van wettelijke toegankelijkheid.
+Deze versie probeert meerdere wegpunten in de buurt van vertrek- en aankomstplaats. Ook is een fout in de verwerking van omgekeerd eenrichtingsverkeer hersteld. De foutmeldingen tonen nu de afstand tot het dichtstbijzijnde wegpunt.
 
-## Installatie op GitHub Pages
-Upload `index.html` en `README.md` naar de hoofdmap van de bestaande repository. De bestaande `manifest.webmanifest` en `sw.js` mogen blijven staan. Als een oudere versie zichtbaar blijft: harde refresh met Ctrl+F5; eventuele oude service-worker-cache kan het resultaat beïnvloeden.
+## Installatie
+Upload `index.html` en `README.md` naar de hoofdmap van de bestaande GitHub-repository `bromroute`, ter vervanging van de gelijknamige bestanden. Laat `manifest.webmanifest` en `sw.js` staan.
 
-## Werking
-Nominatim zoekt plaatsen, Overpass haalt OSM-wegen op, browser-JavaScript bouwt een gerichte graaf en Dijkstra berekent een proefroute. De toepassing weigert grotere afstanden, ontbrekende data en fouten. Er is geen fallback naar autorouting.
+## Beperkingen
+Dit is een technische proef, **geen navigatieproduct**. OpenStreetMap-gegevens en de toegangsfilters zijn onvolledig. De verbinding van de ingevoerde plaats naar de gekozen weg is niet gevalideerd. De router verwerkt niet alle verkeersborden, afslagverboden, lokale beperkingen of wegafsluitingen. Een getekende route bewijst niet dat de route wettelijk berijdbaar is. Gebruik deze versie **niet tijdens het rijden**.
