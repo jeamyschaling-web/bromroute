@@ -1,9 +1,7 @@
-# BromRoute v0.4 — verbeterde proefrouteberekening
+# BromRoute v0.5 — nauwkeuriger punten kiezen
 
-Deze versie probeert meerdere wegpunten in de buurt van vertrek- en aankomstplaats. Ook is een fout in de verwerking van omgekeerd eenrichtingsverkeer hersteld. De foutmeldingen tonen nu de afstand tot het dichtstbijzijnde wegpunt.
+Klik op **Kies vertrek op kaart** en daarna op een exacte locatie. Herhaal voor de bestemming. De route wordt alleen berekend als beide locaties binnen 150 meter van een wegpunt liggen. Oranje stippellijnen zijn niet-gecontroleerde aansluitingen.
 
-## Installatie
-Upload `index.html` en `README.md` naar de hoofdmap van de bestaande GitHub-repository `bromroute`, ter vervanging van de gelijknamige bestanden. Laat `manifest.webmanifest` en `sw.js` staan.
+**Niet gebruiken als rijnavigatie.** Dit is een technische proef, geen juridisch gevalideerde brommobielroute.
 
-## Beperkingen
-Dit is een technische proef, **geen navigatieproduct**. OpenStreetMap-gegevens en de toegangsfilters zijn onvolledig. De verbinding van de ingevoerde plaats naar de gekozen weg is niet gevalideerd. De router verwerkt niet alle verkeersborden, afslagverboden, lokale beperkingen of wegafsluitingen. Een getekende route bewijst niet dat de route wettelijk berijdbaar is. Gebruik deze versie **niet tijdens het rijden**.
+Upload `index.html` en `README.md` naar de hoofdmap van de GitHub-repository en bevestig met **Commit changes**.
