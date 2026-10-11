@@ -1,7 +1,7 @@
-# BromRoute v0.7 — alternatieve proefroutes
+# BromRoute v0.8 — routeonderzoek
 
-Nieuw: na berekening verschijnen waar mogelijk meerdere verschillende routevarianten. Klik op een routeknop om deze op de kaart te vergelijken. De kortste gevonden route blijft de standaardkeuze. Alternatieven worden gezocht door delen van de eerste route tijdelijk minder aantrekkelijk te maken; ze kunnen langer zijn.
+Gebaseerd op v0.7. Nieuw: een overzicht van de gebruikte OpenStreetMap-wegtypen en maximaal 20 bekende wegnamen voor elke gekozen routevariant. Hiermee kun je onderzoeken welke verbindingen de app kiest en waarom een omweg mogelijk ontstaat. De routeberekening is verder grotendeels ongewijzigd.
 
-**Niet gebruiken als rijnavigatie.** Dit is een experimentele test. OpenStreetMap-gegevens kunnen onvolledig zijn; tijdelijke afsluitingen, toegangsregels voor brommobielen, verkeersborden en afslagbeperkingen worden niet volledig gecontroleerd. Geen route is juridisch gevalideerd.
+**Niet gebruiken als rijnavigatie.** Dit is een technische proef, geen juridisch gevalideerde brommobielrouter. OSM-tags zijn onvolledig; tijdelijke afsluitingen, borden, uitzonderingen en afslagbeperkingen worden niet volledig gecontroleerd. Ook routes met alleen ogenschijnlijk gewone wegen kunnen verboden zijn.
 
-Bestanden `manifest.webmanifest` en `sw.js` uit eerdere versies blijven ongewijzigd.
+Upload `index.html` en `README.md` naar de root van de bestaande GitHub-repository; laat `sw.js` en `manifest.webmanifest` staan.
