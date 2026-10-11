@@ -1,7 +1,9 @@
-# BromRoute v1.4 — testversie
+# BromRoute v1.5 — technische test
 
-Wijziging: routes met een vertrekpunt of bestemming verder dan 10 meter van een kandidaat-wegknooppunt worden geweigerd. De eerdere oranje stippellijnen zijn verwijderd.
+- Zoekt het dichtstbijzijnde punt op een OpenStreetMap-wegsegment, niet alleen een wegknooppunt.
+- Splitst het segment in het routenetwerk, met behoud van eenrichtingsverkeer.
+- Weigert locaties op meer dan 12 meter van een wegsegment; tekent geen verzonnen verbindingsweg.
+- Tekent de route alleen van wegpunt tot wegpunt, niet tot een gebouw.
+- Behoudt de bestaande conservatieve toegangsfilters uit v1.4.
 
-**Belangrijk:** de 10-metergrens is een conservatieve technische proef, geen bewijs dat de aansluiting daadwerkelijk berijdbaar is. Ook verkeersregels en wegafsluitingen zijn niet volledig gecontroleerd. Niet gebruiken als rijnavigatie.
-
-Upload `index.html` en `README.md` naar de hoofdmap van de GitHub-repository.
+**Niet gebruiken als rijnavigatie.** Een punt op een wegsegment bewijst niet dat de weg voor brommobielen toegankelijk is. Adressen, verkeersborden, afsluitingen, afslagverboden en lokale regels worden niet volledig gecontroleerd. Dit is niet live getest.
