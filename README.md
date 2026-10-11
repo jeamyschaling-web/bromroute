@@ -1,7 +1,7 @@
-# BromRoute v0.6 — experimentele router
+# BromRoute v0.7 — alternatieve proefroutes
 
-Gebaseerd op v0.5. Nieuw: een zichtbare waarschuwing bij een zeer grote omweg (meer dan 2,5× de hemelsbrede afstand); aanvullende conservatieve uitsluiting van expliciet gemarkeerde tolwegen en emergency_access-wegen.
+Nieuw: na berekening verschijnen waar mogelijk meerdere verschillende routevarianten. Klik op een routeknop om deze op de kaart te vergelijken. De kortste gevonden route blijft de standaardkeuze. Alternatieven worden gezocht door delen van de eerste route tijdelijk minder aantrekkelijk te maken; ze kunnen langer zijn.
 
-**Niet gebruiken als rijnavigatie.** Routes zijn niet juridisch gevalideerd voor brommobielen. De berekening gebruikt onvolledige OpenStreetMap-gegevens; verkeersborden, lokale uitzonderingen, afslagverboden, afsluitingen en wegtoegang kunnen ontbreken. Ook een kortere route is niet automatisch legaal.
+**Niet gebruiken als rijnavigatie.** Dit is een experimentele test. OpenStreetMap-gegevens kunnen onvolledig zijn; tijdelijke afsluitingen, toegangsregels voor brommobielen, verkeersborden en afslagbeperkingen worden niet volledig gecontroleerd. Geen route is juridisch gevalideerd.
 
-Test via GitHub Pages. Vervang alleen index.html en README.md; laat manifest.webmanifest en sw.js staan.
+Bestanden `manifest.webmanifest` en `sw.js` uit eerdere versies blijven ongewijzigd.
