@@ -1,7 +1,8 @@
-# BromRoute v0.8 — routeonderzoek
+# BromRoute v0.9 — testversie
 
-Gebaseerd op v0.7. Nieuw: een overzicht van de gebruikte OpenStreetMap-wegtypen en maximaal 20 bekende wegnamen voor elke gekozen routevariant. Hiermee kun je onderzoeken welke verbindingen de app kiest en waarom een omweg mogelijk ontstaat. De routeberekening is verder grotendeels ongewijzigd.
+Verbetering ten opzichte van v0.8: meerdere Overpass-diensten, GET/POST-alternatieven, foutdiagnostiek en controle op JSON-respons.
 
-**Niet gebruiken als rijnavigatie.** Dit is een technische proef, geen juridisch gevalideerde brommobielrouter. OSM-tags zijn onvolledig; tijdelijke afsluitingen, borden, uitzonderingen en afslagbeperkingen worden niet volledig gecontroleerd. Ook routes met alleen ogenschijnlijk gewone wegen kunnen verboden zijn.
+## Gebruik
+Upload `index.html` en `README.md` naar de hoofdmap van je GitHub-repository. Open daarna je GitHub Pages-site en vernieuw met Ctrl+F5.
 
-Upload `index.html` en `README.md` naar de root van de bestaande GitHub-repository; laat `sw.js` en `manifest.webmanifest` staan.
+**Niet gebruiken voor rijnavigatie.** Routes zijn niet juridisch gevalideerd; tijdelijke afsluitingen en verkeersborden worden niet volledig gecontroleerd. Openbare Overpass-servers kunnen verzoeken blokkeren, beperken of uitvallen. Voor productie is een betrouwbare eigen of contractuele kaart-/routingdienst nodig.
