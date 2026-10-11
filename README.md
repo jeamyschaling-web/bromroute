@@ -1,5 +1,8 @@
-# BromRoute v1.0 — testversie
+# BromRoute v1.1 — testversie
 
-Voegt een wegcontrolelijst toe aan het routeonderzoek. Elke wegsectie wordt als **niet bevestigd voor brommobielen** gemarkeerd. Dit is geen wettelijke toetsing, geen live verkeersinformatie en niet geschikt voor rijnavigatie.
+- Invoer van volledige adressen (straat, huisnummer, plaats) via Nominatim.
+- Duidelijkere foutmelding als een plaatsnaam of adres te ver van een wegpunt ligt.
+- Proefberekening zoekt aansluitpunten binnen 250 m, maar de aansluitlijnen zijn **niet** berijdbaar verklaard.
+- Bestaande routevarianten en handmatige wegcontrole behouden.
 
-Upload `index.html` en `README.md` naar de hoofdmap van je GitHub Pages-repository.
+**Niet gebruiken als rijnavigatie.** Routes en toegangsregels zijn niet juridisch of verkeerskundig gevalideerd. Geen live afsluitingencontrole.
