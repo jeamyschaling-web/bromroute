@@ -1,9 +1,10 @@
-# BromRoute v1.5 — technische test
+# BromRoute v1.6 — wegdelen onderzoeken en tijdelijk vermijden
 
-- Zoekt het dichtstbijzijnde punt op een OpenStreetMap-wegsegment, niet alleen een wegknooppunt.
-- Splitst het segment in het routenetwerk, met behoud van eenrichtingsverkeer.
-- Weigert locaties op meer dan 12 meter van een wegsegment; tekent geen verzonnen verbindingsweg.
-- Tekent de route alleen van wegpunt tot wegpunt, niet tot een gebouw.
-- Behoudt de bestaande conservatieve toegangsfilters uit v1.4.
+Nieuw:
+- De hoofdtitel toont nu correct v1.6 (in v1.5 stond daar nog v1.4).
+- Klik op een wegdeel van de getekende proefroute om de OSM-wegnaam, het wegtype en de toegangsindicatie te bekijken.
+- Kies **Vermijd dit wegdeel (proef)** om een nieuwe route te zoeken zonder dat segment, in beide richtingen.
+- Met **Maak vermijdingen ongedaan** herstel je de oorspronkelijke proefroute.
+- Alle bestaande functies uit v1.5 blijven behouden.
 
-**Niet gebruiken als rijnavigatie.** Een punt op een wegsegment bewijst niet dat de weg voor brommobielen toegankelijk is. Adressen, verkeersborden, afsluitingen, afslagverboden en lokale regels worden niet volledig gecontroleerd. Dit is niet live getest.
+**Belangrijk:** Dit is uitsluitend een technische proef, niet geschikt voor rijnavigatie. Brommobieltoegang, tijdelijke afsluitingen, verkeersborden en kruispuntregels zijn niet volledig gevalideerd. Vermijden van een wegdeel bewijst niet dat de gevonden alternatieve route toegestaan is.
