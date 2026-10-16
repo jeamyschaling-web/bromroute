@@ -1,7 +1,7 @@
-# BromRoute v2.2
+# BromRoute v2.3
 
-Experimentele routevergelijker voor brommobielen. Niet gebruiken als rijnavigatie.
+Experimentele brommobielroute, niet geschikt als rijnavigatie.
 
-Nieuw: opslag van opgehaalde OpenStreetMap-weggegevens in IndexedDB, met een tijdelijke sessionStorage-terugval. Verse cache (<24 uur) wordt gebruikt zonder serveraanvraag; als de servers niet bereikbaar zijn, kunnen gegevens van maximaal zeven dagen oud als duidelijk gemarkeerde noodoplossing worden gebruikt. Er wordt alleen exact dezelfde kaartgebiedsquery uit de cache gebruikt. Voor een nieuw gebied zonder opgeslagen gegevens is een werkende Overpass-server nodig.
+Nieuw: Overpass-weggegevens worden met een eenvoudige POST en bij problemen via GET aangevraagd. Extra server toegevoegd. Bestaande routevergelijking en opslag behouden.
 
 Upload index.html en README.md naar de hoofdmap van de bestaande GitHub-repository.
