@@ -716,6 +716,7 @@ function routeAccessSummary(v){
 }
 function allowed(t){const h=t.highway||'';if(!['residential','living_street','tertiary','tertiary_link','secondary','secondary_link','primary','primary_link','unclassified','service','road'].includes(h))return false;if(t.motorroad==='yes'||t.expressway==='yes'||t.toll==='yes')return false;
   // Bestemmingsverkeer en conditionele toegang niet als doorgaande route aanbieden.
+  if(['access','vehicle','motor_vehicle','motorcar'].some(k=>t[k+':conditional']))return false;
   if(accessAssessment(t).status==='uitgesloten'||accessAssessment(t).status==='beperkt')return false;
   if(['driveway','parking_aisle','emergency_access'].includes(t.service))return false;if(t.area==='yes'||t.construction)return false;return true;}
 function graphOf(ways){const adj=new Map(),coords=new Map(),edgeTags=new Map();function add(a,b,d,t){if(!adj.has(a))adj.set(a,[]);adj.get(a).push([b,d]);edgeTags.set(a+":"+b,t);}let count=0;for(const w of ways){if(w.type!=='way'||!w.geometry||!w.nodes||!allowed(w.tags||{}))continue;const t=w.tags||{},one=t.oneway==='yes'||t.oneway==='1'||t.junction==='roundabout',rev=t.oneway==='-1';for(let i=0;i<w.nodes.length;i++)coords.set(w.nodes[i],[w.geometry[i].lat,w.geometry[i].lon]);for(let i=1;i<w.nodes.length;i++){const a=w.nodes[i-1],b=w.nodes[i],d=meters(coords.get(a),coords.get(b));if(!rev)add(a,b,d,t);if(rev||!one)add(b,a,d,t);count++;}}return {adj,coords,edgeTags,count};}
